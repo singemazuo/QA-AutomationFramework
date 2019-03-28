@@ -10,17 +10,17 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class TestRecap {
 
 	public static void main(String[] args) throws InterruptedException {
 		// setting system property path for webdriver
-		String exePath = "/Applications/chromedriver";
-		System.setProperty("webdriver.chrome.driver",exePath);
+		String exePath = "C:\\IEDriverServer.exe";
+		System.setProperty("webdriver.ie.driver",exePath);
 		// instantiate a specific driver for webdriver
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new InternetExplorerDriver();
 		// enter a website address for opening
 		driver.get("http://automationpractice.com/index.php");
 		
